@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/about.css">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" >
+            <h1><a href="index.html">Livefloor</a></h1>
+            <div class="container-flex" id="show-menu">
+                <ul>
+                    <li><a href="index.html" class=" nav-link">Home</a></li>
+                    <li><a href="about.html" class=" active nav-link">About</a></li>
+                    <li><a href="service.html"class="nav-link">Service</a></li>
+                    <li><a href="gallery.html"class="nav-link">Gallery</a></li>
+                    <li class="dropwn-blog"><a href=""class="nav-link">Blog<span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown">
+                            <li><a href="" class="nav-link">Blog posts</a></li>
+                            <li><a href="" class="nav-link">Blog single</a></li>
+                            <li> <a href="" class="nav-link">Landing page</a></li>
+                        </ul>
+                    </li>  
+                    <li><a href=""class="nav-link">Contact</a></li>
+                </ul>       
+            </div>
+            <div class="text-right">
+                <a href=""class="btn">Get free estimate</a>
+                <i style="font-size:24px" class="fa">&#xf186;</i>
+           </div>
+           <div class="menu" onclick="onClickMenu()" >
+            <i class="fa fa-bars" style="font-size:40px"></i>
+         </div>
+           <script>
+                function onClickMenu(){
+                let menu = document.getElementById('show-menu');
+                if(menu.classList.contains("show")){
+                    menu.classList.remove("show")
+                    menu.classList.add("hide")
+                }
+                else{
+                    menu.classList.remove("hide")
+                    menu.classList.add("show")
+                }
+            }
+           </script>
+        </nav>
+    </header>
+    <script>
+      window.addEventListener('scroll', function(){
+          let header = document.querySelector('header');
+          header.classList.toggle('sticky', window.scrollY>0);
+      })
+  </script>
+    <section class="about banner-view">
+            <div class="content-about">
+                <h2 class="title">About Us</h2>
+                <ul class="page">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>About</a></li>
+                </ul>
+            </div>
+    </section>
+    <section class="absection">
+        <div class="container-ab">
+            <h6 class="sub-title">About Us</h6>
+        <h3 class="hny-title">Interiors that reflect your style &amp; Creating the art of stylish living.</h3>
+        <p class="mt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt laboriosam ducimus, odio
+            aspernatur fugiat minima blanditiis dignissimos.</p>
+        <a href="#read" class="read">Read more <span class="fa fa-arrow-right ml-1" aria-hidden="true"></span></a>
+        <div class="image">
+            <img src="./Img/banner5.jpg" alt="Banner5">
+        </div>
+        </div>
+    </section>
+    <section class="choose">
+        <div class="container-choose">
+            <div class="item-left">
+                <h6 class="sub-title">Why Choose Us</h6>
+                <h3 class="hny-title">Built to perfection, fitted by experts</h3>
+            </div>
+            <div class="item-right">
+                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt laboriosam ducimus, odio
+                    aspernatur fugiat minima blanditiis dignissimos.</p>
+                    <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt laboriosam ducimus, odio
+                        aspernatur fugiat minima blanditiis dignissimos.</p>
+                        <a href="#read" class="read">Read more <span class="fa fa-arrow-right ml-1" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </section>
+    <section class="customer banner-view">
+            <div class="container-customer">
+                <div class="col-customer">
+                    <span class="fa fa-smile-o"></span>
+                    <p class="counter">1730</p>
+                    <h4>Happy Customers</h4>
+                </div>
+                <div class="col-customer">
+                    <span class="fa fa-users"></span>
+                    <p class="counter">730</p>
+                    <h4>Custom Products</h4>
+                </div>
+                <div class="col-customer">
+                    <span class="fa fa-database"></span>
+                <p class="counter">30</p>
+                <h4>branches</h4>
+                </div>
+            </div>
+    </section>
+    <section class="meet">
+        <div class="header-meet">
+            <h6 class="sub-title">Our team</h6>
+            <h3 class="hny-title">Meet our people</h3>
+        </div> 
+        <div class="box-image">
+            <div class="container-box">
+                <div class="item">
+                    <a href=""><img src="./Img/team1.jpg" alt="Team"></a>
+                    <div class="overplay overplay-bt">
+                        <div class="text">
+                            <h3><a href="">Alexander</a></h3>
+                            <span class="post">Description</span>
+                                <ul class="social">
+                                    <li>
+                                      <a href="#" class="facebook">
+                                        <span class="fa fa-facebook-f"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="twitter">
+                                        <span class="fa fa-twitter"></span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./Img/team2.jpg" alt="Team"></a>
+                    <div class="overplay overplay-bt">
+                        <div class="text">
+                            <h3><a href="">Victoria</a></h3>
+                            <span class="post">Description</span>
+                                <ul class="social">
+                                    <li>
+                                      <a href="#" class="facebook">
+                                        <span class="fa fa-facebook-f"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="twitter">
+                                        <span class="fa fa-twitter"></span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./Img/team3.jpg" alt="Team"></a>
+                    <div class="overplay overplay-bt">
+                        <div class="text">
+                            <h3><a href="">Smith roy</a></h3>
+                            <span class="post">Description</span>
+                                <ul class="social">
+                                    <li>
+                                      <a href="#" class="facebook">
+                                        <span class="fa fa-facebook-f"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="twitter">
+                                        <span class="fa fa-twitter"></span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./Img/team4.jpg" alt="Team"></a>
+                    <div class="overplay overplay-bt">
+                        <div class="text">
+                            <h3><a href="">Johnson</a></h3>
+                            <span class="post">Description</span>
+                                <ul class="social">
+                                    <li>
+                                      <a href="#" class="facebook">
+                                        <span class="fa fa-facebook-f"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="twitter">
+                                        <span class="fa fa-twitter"></span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./Img/team5.jpg" alt="Team"></a>
+                    <div class="overplay overplay-bt">
+                        <div class="text">
+                            <h3><a href="">Johnson</a></h3>
+                            <span class="post">Description</span>
+                                <ul class="social">
+                                    <li>
+                                      <a href="#" class="facebook">
+                                        <span class="fa fa-facebook-f"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="twitter">
+                                        <span class="fa fa-twitter"></span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./Img/team6.jpg" alt="Team"></a>
+                    <div class="overplay overplay-bt">
+                        <div class="text">
+                            <h3><a href="">Johnson</a></h3>
+                            <span class="post">Description</span>
+                                <ul class="social">
+                                    <li>
+                                      <a href="#" class="facebook">
+                                        <span class="fa fa-facebook-f"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#" class="twitter">
+                                        <span class="fa fa-twitter"></span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="movetop">
+      <span class="fa fa-angle-up"></span>
+  </button>
+  <script>
+      window.onscroll = function () {
+          scrollFunction();
+      }
+      function scrollFunction() {
+          let moveTop = document.getElementById('movetop');
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              moveTop.style.display = 'block';
+          } else {
+              moveTop.style.display = 'none';
+          }
+      }
+      function topFunction() {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+  </script>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="col-item">
+                <h6 class="title-footer">About Company</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium voluptate rem ullam dolore nisi voluptatibus esse quasi.Integer sit amet mattis quam.</p>
+                <div class="social-network">
+                    <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                    <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                    <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                    <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                </div>
+            </div>
+           <div class="col-1">
+            <h6 class="title-footer">Useful Links</h6>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html"> Blog posts</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+           </div>
+           <div class="col-1">
+            <h6 class="title-footer">Services</h6>
+            <ul>
+                <li><a href="#">Furniture Chairs</a></li>
+                <li><a href="#">Three Seater Sofas</a></li>
+                <li><a href="#"> Dining Tables</a></li>
+                <li><a href="#"> Office Chairs</a></li>
+                <li><a href="#">Kitchen Cabinets</a></li>
+            </ul>
+           </div>
+           <div class="col-item">
+            <h6 class="title-footer">Contact Us</h6>
+            <ul>
+                <li><p><span class="fa fa-map-marker"></span> Livefloor, #49436 block, #888 Honey rd Newyork</li></p>
+                  <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
+                  <li><a href="mailto:Livefloor@mail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
+                    Livefloor@mail.com</a></li>
+            </ul>
+        </div>
+        </div>
+</footer>
+<section class="c-right">
+    <div class="content">
+        <p class="copy-right text-center">© 2020 Livefloor. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank">
+            W3Layouts</a></p>
+    </div>
+</section>
+</body>
+</html>
